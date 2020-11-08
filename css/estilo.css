@@ -1,0 +1,436 @@
+html{	
+	font-size: 62.5%;
+	margin:0;
+	padding: 0;
+
+} 	
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5rem;
+	box-sizing: border-box; 
+}
+
+		/* M E N U */
+.grid{
+	display: grid;
+ 	background-color: rgba(0 0 0 / 28%);
+ 	grid-template-columns: 30% 70%;
+ 	width: 100%;
+ 	position: absolute;
+	}
+.logo img{
+	margin: 20px;
+	width: 150px;
+	display: grid;
+	}
+
+.menubar{
+	display: grid;
+	align-items: center;
+}
+
+.menubar nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.menubar nav li{
+	position: relative;  
+	line-height: 3rem;
+	}
+.menubar nav li ul{
+	position: absolute;
+}
+.menubar nav a{
+	text-decoration: none;
+	color:white;
+	display: block; 
+	padding: 0 2.5em;
+}
+.menubar nav a:hover{
+	background-color: rgba(0 0 0 / 0.5);
+}
+.menubar nav li ul{
+	display: none;
+}
+.menubar nav li:hover > ul{
+	display: block;  
+ }
+.menubar nav > ul{
+    width: 100%;
+    text-transform: uppercase;
+}
+/*  MENU SEGUNDO NIVEL*/
+.menubar nav li li {
+    background-color:  rgba(2 2 2 / 62%);
+    width: 200px;
+}
+.menubar nav > ul > li > ul	{
+    top: 100%;
+}
+.menubar nav ul ul{
+    left: 0%;
+    top: 0;
+}
+
+/* header - img fondo*/
+
+.fondo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.logoPrin > img{
+	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  	animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+.logoPrin{
+	position: absolute;
+	}
+
+.menDer{
+	border: 1px solid black;
+	height: 30%;
+	width: 15%;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+
+	transition: height 2s, width 1s;
+}
+.menDer > img{
+	width: 50vh;
+	position: absolute;
+	left: 10%;
+	top: 30%;
+}
+.menDer:hover{
+	height: 150px;
+	width: 150px;
+}
+.menIzq{
+	border: 1px solid black;
+	height: 30vh;
+	width: 30vh;
+	position: absolute;
+	top: 35%;
+	left: 80%;
+
+	transition: height 2s, width 1s;
+
+}
+.menIzq:hover{
+	height: 150px;
+	width: 150px;
+}
+.menIzq > img{
+	width: 41vh;
+	position: absolute;
+	right: 15%;
+	top: 25%
+}
+
+
+
+
+
+/* P R O D U C T O S*/
+main{margin-top: 5rem;}
+
+.espacioMain{
+	margin: 3rem;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+.espacioMain p {
+	font-size: 1.7rem;
+	font-weight: 300;
+	margin-top: 0;
+}
+.espacioMain img{
+	width: 100px;
+	}
+main{display: flex;
+justify-content: center;}
+
+/*  T R A N S F O R M */
+.espacioMain div img:hover{
+	transform: scale(1.2,1.2);
+	}
+main .espacioMain div:hover{
+	border: 1px solid black;
+	}
+	
+
+
+
+/*H1 - T I T U L O S*/
+.rojoRed{
+	color: black;
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 15px;
+	}
+
+.blue{
+	color: black;
+	}
+section h1{
+	text-align: center;
+	font-size: 2rem;
+}
+
+/* NEW */
+.newEntry{
+	background-color: #e3e3e3;
+	display: flex;
+	flex-flow: wrap;
+	height: 350px;
+	align-items: center;
+	justify-content: end;
+	}
+.newEntry h1{
+	font-size: 3rem;
+	position: relative;
+	bottom: 30px;
+	left: 170px;
+
+}
+.izq{
+	position: relative;
+	left: 120px;
+	top: 62px;
+
+}
+.izq p{
+	padding:10px;
+	background-color: black;
+	color: white;
+	width: 400px;
+}
+
+
+/* LINK HISTORIA*/
+.gridH{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+	grid-template-rows: 230px;
+	justify-items: center;
+}
+.gridH img{
+	width: 100px;
+}
+.gridH div{
+	border: 1px solid black;
+	padding: 1em;
+	text-align: center;
+}
+
+
+/* P R O D U C T O S*/
+
+.espacioMain{
+	margin: 3rem;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 5rem;
+}
+.espacioMain p {
+	font-size: 1.7rem;
+	font-weight: 300;
+}
+.espacioMain img{
+	width: 100px;
+	}
+
+
+
+/*B O O T S T R A P */
+.formulario{
+	display: flex;
+	justify-content: center;
+}
+
+.formulario form{
+	width: 300px;
+}
+
+.cardM{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+/* F O O T E R */
+
+.espacio{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.FondoGrisClaro{
+	background-color:#f2f2f2;
+	margin-top: 30px;
+	justify-content: center;
+	}
+.FondoGrisClaro p{
+	padding: 15px;
+	font-size: 1.2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+.FondoGrisClaro iframe{
+	padding: 15px;
+}
+
+.redes > nav{
+	color: black;
+}
+.redes > nav li{
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	padding-top: 10px;
+}
+
+
+
+.conCard{
+	margin: 3rem;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 5rem;
+}
+.conCard p {
+	font-size: 1.7rem;
+	font-weight: 300;
+}
+
+
+.clase14git{
+	background-color: red;
+	width: 200px;
+}
+
+/* M E D I A  Q U E R I E S  - 320 / 480 / 600 */
+
+@media only screen  and (max-width: 320px){
+	.menubar{display: none;
+	}
+	.logo img{width: 85%;
+	}
+	.menDer{
+		display: none;
+	}
+	.menIzq{
+		display: none;
+	}
+	.cardM{display:grid;
+	}
+	.cardM div{ margin: 0 0 15px 0;
+	
+	 }
+	.newEntry{
+		display: none;
+	}
+	
+	.espacio{
+		flex-flow: column;
+		align-items: center;}
+
+	.redes nav ul{
+		padding: 0; 
+		text-align: center;}
+
+
+	}
+
+
+@media (min-width: 321px) and (max-width: 480px){
+	.menubar{display: none;
+	}
+	.logo img{width: 85%;
+	}
+	.newEntry {
+		display: none;
+	}
+	.menDer{
+		display: none;
+	}
+	.menIzq{
+		display: none;
+	}
+	.cardM{display:grid;
+	}
+	.cardM div{ margin: 0 0 15px 0;
+	
+	 }
+	.espacio{
+		flex-flow: column;
+		align-items: center;
+	}
+
+
+	.redes nav ul{
+		padding: 0; 
+		text-align: center;}
+	}
+	
+
+
+
+
+@media only screen and (max-width: 600px){
+	.menubar{display: none;
+	}
+.logo img{width: 85%;
+	}
+	.newEntry {
+		display: none;
+	}
+	.cardM{display:grid;
+	}
+	.cardM div{ margin: 0 0 15px 0;
+	
+	 }
+	.menDer{
+		display: none;
+	}
+	.menIzq{
+		display: none;
+	}
+	.espacio{
+		flex-flow: column; 
+		align-items: center;
+	}
+
+	.redes nav ul{
+		padding: 0; 
+		text-align: center;}
+
+	}
